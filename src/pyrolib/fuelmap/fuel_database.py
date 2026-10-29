@@ -9,6 +9,7 @@ import yaml
 
 from .fuels import (
     BalbiFuel,  # noqa: F401 (fuel classes are looked up by name in this module's namespace)
+    RothFuel,
 )
 
 
@@ -127,9 +128,20 @@ class FuelDatabase:
             # iterate on fuel classes
             minimal_dict_of_fuels = {}
             for fuel in self.fuels[fuel_description].keys():
-                minimal_dict_of_fuels[type(self.fuels[fuel_description][fuel]).__name__] = self.fuels[
-                    fuel_description
-                ][fuel].minimal_dict(compact=compact)
+                fuel_object = self.fuels[fuel_description][fuel]
+                fuel_dict = fuel_object.minimal_dict(compact=compact)
+
+                if not compact:
+                    fuel_dict["properties"] = {
+                        property_name: {
+                            "Description": property_data["description"],
+                            "Unit": property_data["unit"],
+                            "Value": property_data["value"],
+                        }
+                        for property_name, property_data in fuel_dict["properties"].items()
+                    }
+
+                minimal_dict_of_fuels[type(fuel_object).__name__] = fuel_dict
             # add to dict to store
             dict_to_store[fuel_description] = minimal_dict_of_fuels
         #

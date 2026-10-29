@@ -6,6 +6,7 @@ from .fuelmap import (
 )
 from .fuels import (
     BalbiFuel,
+    RothFuel,
     show_fuel_classes,
 )
 from .utility import (
@@ -15,6 +16,7 @@ from .utility import (
 
 __all__ = [
     "BalbiFuel",
+    "RothFuel",
     "FuelDatabase",
     "FuelMap",
     "fire_array_2d_to_3d",

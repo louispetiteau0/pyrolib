@@ -123,6 +123,16 @@ def test_BalbiFuel_minimal_dict_not_compact():
     assert mdict["properties"]["rhod"]["value"] == 400
 
 
+def test_show_fuel_classes_lists_registered_classes(capsys):
+    pl.show_fuel_classes(show_fuel_properties=False)
+
+    output = capsys.readouterr().out
+    assert "BalbiFuel" in output
+    assert "RothFuel" in output
+    assert "CPROPAG_MODEL = SANTONI2011" in output
+    assert "CPROPAG_MODEL = ROTHERMEL" in output
+
+
 """FuelDatabase
 """
 
@@ -158,6 +168,18 @@ def test_fuel_db_dump(tmpdir, filename, iscompact):
     assert pathreal.readlines(cr=1)[0] == "infos: test\n"
     check_str = f"is_compact: {str(iscompact).lower()}\n"
     assert pathreal.readlines(cr=1)[1] == check_str
+
+
+def test_fuel_db_dump_and_load_non_compact(tmpdir):
+    tmpdir.chdir()
+    original_db = pl.FuelDatabase()
+    original_db["custom_grass"] = {"BalbiFuel": pl.BalbiFuel(rhod=420)}
+
+    original_db.dump_database("roundtrip", info="test", compact=False)
+    loaded_db = pl.FuelDatabase()
+    loaded_db.load_fuel_database("roundtrip")
+
+    assert loaded_db["roundtrip_custom_grass"]["BalbiFuel"].rhod.value == 420
 
 
 def test_convert_lon_lat_2_x_y_mercator_no_rotation():

@@ -227,7 +227,7 @@ class BalbiFuel(BaseFuel):
 
     New fuel class is set with default value.
     Any fuel property can be passed explicitely to the constructor
-    to set a different vaklue than the default one.
+    to set a different value than the default one.
 
     Other Parameters
     ----------------
@@ -428,23 +428,186 @@ class BalbiFuel(BaseFuel):
         return R
 
 
+class RothFuel(BaseFuel):
+    """Class of fuel for Rothermel rate of spread model [3]_, [4]_.
+
+    New fuel class is set with default value.
+    Default class is GR1 of the Scott and Burgan classification [4]_.
+    Any fuel property can be passed explicitely to the constructor
+    to set a different value than the default one.
+
+    Other Parameters
+    ----------------
+
+    mx_dead : float, optional
+        Dead fuel moisture of extinction (default: 0.15)
+    st : float, optional
+        Total Mineral Content (default: 0.0555)
+    se : float, optional
+        Effective Mineral Content (default: 0.010)
+    h : float, optional
+        Heat content (default: 8000 Btu lb-1)
+    rhop : float, optional
+        Particle density (default: 32 lb ft-3)
+    delta : float, optional
+        Fuel depth (default: 0.4 ft)
+    wo_11 : float, optional
+        Dead fuel load 1hr (default: 0.00459137 lb ft-2)
+    wo_10hr : float, optional
+        Dead fuel load 10hr (default: 0 lb ft-2)
+    wo_100hr : float, optional
+        Dead fuel load 100hr (default: 0 lb ft-2)
+    wo_21 : float, optional
+        Live fuel load herb (default: 0.01377411 lb ft-2)  
+    sigma_11 : float, optional
+        Surface area to volume ratio dead 1hr (default: 2200 ft-1)
+    sigma_10hr : float, optional
+        Surface area to volume ratio dead 10hr (default: 109 ft-1)
+    sigma_100hr : float, optional
+        Surface area to volume ratio dead 100hr (default: 30 ft-1)
+    sigma_21 : float, optional
+        Surface area to volume ratio live herb (default: 2000 ft-1) 
+    wind : float, optional
+            Wind at mid-flame (default 0 ft min-1)
+    slope : float, optional
+            Slope (default: 0 deg)
+    mf_live : float, optional
+        Live fuel moisture (default: 0.7)
+    mf_dead : float, optional
+        Dead fuel moisture (default: 0.1)
+
+    References
+    ----------
+    .. [3] Andrews, P. L. (2018).
+           The Rothermel surface fire spread model and associated developments: A comprehensive explanation.
+           Gen. Tech. Rep. RMRS-GTR-371. Fort Collins,
+           CO: US Department of Agriculture, Forest Service, Rocky Mountain Research Station. 121 p., 371.
+           https://doi.org/10.2737/RMRS-GTR-371
+
+    .. [4] Scott, J. H. (2005).
+           Standard fire behavior fuel models: a comprehensive set for use with Rothermel's surface fire spread model.
+           US Department of Agriculture, Forest Service, Rocky Mountain Research Station.
+           https://www.fs.fed.us/rm/pubs/rmrs/gtr/rmrs_gtr0305.pdf
+
+    Examples
+    --------
+
+    >>> import pyrolib.fuels as pyf
+    >>> # create a new fuel class with default value.
+    >>> F1 = pyf.RothFuel()
+    >>> # create a new fuel class with default value
+    >>> # except for `delta` and `wo_11` where a new value is set.
+    >>> F2 = pyf.RothFuel(delta=1, wo_11=0.009)
+    """
+
+    def __init__(self, **opts):
+        # fmt: off
+        self.mx_dead     = FuelProperty(name='mx_dead',      value=0.15,       unit='-',        description='Dead fuel moisture of extinction',         propertyindex=1)
+        self.st          = FuelProperty(name='st',           value=0.0555,     unit='-',        description='Total Mineral Content',                    propertyindex=2)
+        self.se          = FuelProperty(name='se',           value=0.01,       unit='-',        description='Effective Mineral Content',                propertyindex=3)
+        self.h           = FuelProperty(name='h',            value=8000,       unit='Btu lb-1', description='Heat content',                             propertyindex=4)
+        self.rhop        = FuelProperty(name='rhop',         value=32,         unit='lb ft-3',  description='Particle density',                         propertyindex=5)
+        self.delta       = FuelProperty(name='delta',        value=0.4,        unit='ft',       description='Fuel depth',                               propertyindex=6)
+        self.wo_11       = FuelProperty(name='wo_11',        value=0.00459137, unit='lb ft-2',  description='Dead fuel load 1hr',                       propertyindex=7)
+        self.wo_10hr     = FuelProperty(name='wo_10hr',      value=0.,         unit='lb ft-2',  description='Dead fuel load 10hr',                      propertyindex=8)
+        self.wo_100hr    = FuelProperty(name='wo_100hr',     value=0.,         unit='lb ft-2',  description='Dead fuel load 100hr',                     propertyindex=9)
+        self.wo_21       = FuelProperty(name='wo_21',        value=0.01377411, unit='lb ft-2',  description='Live fuel load herb',                      propertyindex=10)
+        self.sigma_11    = FuelProperty(name='sigma_11',     value=2200,       unit='ft-1',     description='Surface area to volume ratio dead 1hr',    propertyindex=11)
+        self.sigma_10hr  = FuelProperty(name='sigma_10hr',   value=109,        unit='ft-1',     description='Surface area to volume ratio dead 10hr',   propertyindex=12)
+        self.sigma_100hr = FuelProperty(name='sigma_100hr',  value=30,         unit='ft-1',     description='Surface area to volume ratio dead 100hr',  propertyindex=13)
+        self.sigma_21    = FuelProperty(name='sigma_21',     value=2000,       unit='ft-1',     description='Surface area to volume ratio live herb',   propertyindex=14)
+        self.wind        = FuelProperty(name='wind',         value=0,          unit='ft min-1', description='Wind at mid-flame',)
+        self.slope       = FuelProperty(name='slope',        value=0,          unit='-',        description='Slope steepness (tan(slope))',)
+        self.mf_live     = FuelProperty(name='mf_live',      value=0.7,        unit='-',        description='Live fuel moisture',)
+        self.mf_dead     = FuelProperty(name='mf_dead',      value=0.1,        unit='-',        description='Dead fuel moisture',)
+       # fmt: on
+        # Modify from default
+        self._modify_parameter_value(**opts)
+
+    def copy(self, **opts):
+        """Copy fuel class to a new fuel class object.
+
+        Other Parameters
+        ----------------
+
+        **opts : optional
+            Any valid property can be passed to change its value for the new object
+
+        Return
+        ------
+
+        NewFuel as RothFuel
+
+        Examples
+        --------
+
+        >>> import pyrolib.fuels as pyf
+        >>> # create a new fuel class with default value.
+        >>> F1 = pyf.RothFuel()
+        """
+        # get dictionary of variable for self and store values in dictionary
+        DictOfObjects = vars(self)
+        DictOfVars = {}
+        for key in DictOfObjects.keys():
+            DictOfVars[key] = DictOfObjects[key].value
+        # pass dictionary as positional args in constructor for copy
+        NewFuel = RothFuel(**DictOfVars)
+        # modify newfuel parameters with opts positional args
+        NewFuel._modify_parameter_value(**opts)
+        #
+        return NewFuel
+    
+    #
+    def getR(self):
+        """Compute rate of spread according to Rothermel's parameterization [3]_).
+
+        Return
+        ------
+
+        R : float
+            rate of spread for current fuel properties.
+
+        [[ Missing ]] 
+
+        """
+        R = 0.0
+
+
+        return R
+
+
 _ROSMODEL_NB_PROPERTIES = {
     "SANTONI2011": 22,
+    "ROTHERMEL": 15,
 }
 
 
 _ROSMODEL_FUELCLASS_REGISTER = {
     "SANTONI2011": type(BalbiFuel()).__name__,
+    "ROTHERMEL": type(RothFuel()).__name__,
 }
 
 
 def show_fuel_classes(show_fuel_properties=True):
-    """Print fuel classes available in pyrolib and default parameters values"""
-    # Balbi
+    """Print registered fuel classes and, optionally, their default properties.
+
+    Fuel classes are obtained from ``_ROSMODEL_FUELCLASS_REGISTER`` so the
+    displayed classes stay in sync with the ROS parameterizations supported
+    by the fuel-map code.
+    """
     print("\nMore information about fuel classes:")
-    print(f"* < {type(BalbiFuel()).__name__} > class is compliant with the Balbi's ROS parameterization.")
-    print("  It is used when < CPROPAG_MODEL = SANTONI2011 > in the Méso-NH namelist.")
-    if show_fuel_properties:
-        print("It contains the following properties with default value:")
-        print(BalbiFuel())
-    print()
+    fuel_class_names = dict.fromkeys(_ROSMODEL_FUELCLASS_REGISTER.values())
+    for fuel_class_name in fuel_class_names:
+        fuel_class = globals()[fuel_class_name]
+        model_names = [
+            model_name
+            for model_name, registered_class_name in _ROSMODEL_FUELCLASS_REGISTER.items()
+            if registered_class_name == fuel_class_name
+        ]
+        print(f"* < {fuel_class_name} > class is compliant with ROS parameterization(s): {', '.join(model_names)}.")
+        for model_name in model_names:
+            print(f"  It is used when < CPROPAG_MODEL = {model_name} > in the Méso-NH namelist.")
+        if show_fuel_properties:
+            print("  It contains the following properties with default values:")
+            print(fuel_class())
+        print()

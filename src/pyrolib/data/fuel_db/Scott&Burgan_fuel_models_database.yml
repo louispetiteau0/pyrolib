@@ -1,0 +1,884 @@
+infos: 30 Fuel type models defied in Scott and Burgan [1]_ for Rothermel rate of spread
+  model.
+is_compact: true
+fuels:
+  GR1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.4
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2200
+        sigma_21: 2000
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.00459137
+        wo_21: 0.01377411
+  GR2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.00459137
+        wo_21: 0.0459137
+  GR3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1500.0
+        sigma_21: 1300.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.01836548
+        wo_11: 0.00459137
+        wo_21: 0.06887055
+  GR4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.011478425
+        wo_21: 0.08723603
+  GR5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.5
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 1600.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.01836548
+        wo_21: 0.11478425
+  GR6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.5
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2200.0
+        sigma_21: 2000.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.00459137
+        wo_21: 0.15610658
+  GR7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 3.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.0459137
+        wo_21: 0.24793398000000003
+  GR8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 4.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1500.0
+        sigma_21: 1300.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0459137
+        wo_11: 0.02295685
+        wo_21: 0.33517001
+  GR9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 5.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 1600.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0459137
+        wo_11: 0.0459137
+        wo_21: 0.4132233
+  GS1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.9
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.00918274
+        wo_21: 0.02295685
+  GS2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.5
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.02295685
+        wo_11: 0.02295685
+        wo_21: 0.02754822
+  GS3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.8
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 1600.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.011478425
+        wo_11: 0.01377411
+        wo_21: 0.066574865
+  GS4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.1
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 1600.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.00459137
+        wo_10hr: 0.01377411
+        wo_11: 0.08723603
+        wo_21: 0.15610658
+  SB1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.5050507
+        wo_10hr: 0.1377411
+        wo_11: 0.06887055
+        wo_21: 0.0
+  SB2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.1836548
+        wo_10hr: 0.19513322500000002
+        wo_11: 0.20661165
+        wo_21: 0.0
+  SB3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.2
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.1377411
+        wo_10hr: 0.126262675
+        wo_11: 0.25252535
+        wo_21: 0.0
+  SB4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.7
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.24104692500000002
+        wo_10hr: 0.24104692500000002
+        wo_11: 0.24104692500000002
+        wo_21: 0.0
+  SH1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.011478425
+        wo_11: 0.011478425
+        wo_21: 0.006887055
+  SH2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.034435275
+        wo_10hr: 0.11019288
+        wo_11: 0.061983495000000007
+        wo_21: 0.0
+  SH3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.4
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1600.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.1377411
+        wo_11: 0.020661165000000002
+        wo_21: 0.0
+  SH4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 3.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.00918274
+        wo_10hr: 0.052800755
+        wo_11: 0.039026645
+        wo_21: 0.0
+  SH5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 6.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 750.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.09641877
+        wo_11: 0.16528932000000002
+        wo_21: 0.0
+  SH6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 2.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 750.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.066574865
+        wo_11: 0.13314973
+        wo_21: 0.0
+  SH7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 6.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.15
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 750.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.10101014000000001
+        wo_10hr: 0.24334261000000001
+        wo_11: 0.16069795
+        wo_21: 0.0
+  SH8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 3.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 750.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.039026645
+        wo_10hr: 0.15610658
+        wo_11: 0.094123085
+        wo_21: 0.0
+  SH9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 4.4
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.4
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 750.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.11248856500000001
+        wo_11: 0.20661165
+        wo_21: 0.07116623500000001
+  TL1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.2
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.16528932000000002
+        wo_10hr: 0.10101014000000001
+        wo_11: 0.0459137
+        wo_21: 0.0
+  TL2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.2
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.10101014000000001
+        wo_10hr: 0.10560151
+        wo_11: 0.06427918
+        wo_21: 0.0
+  TL3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.3
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.2
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.12855836
+        wo_10hr: 0.10101014000000001
+        wo_11: 0.02295685
+        wo_21: 0.0
+  TL4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.4
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.19283754
+        wo_10hr: 0.06887055
+        wo_11: 0.02295685
+        wo_21: 0.0
+  TL5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.6
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.19283754
+        wo_10hr: 0.11478425
+        wo_11: 0.052800755
+        wo_21: 0.0
+  TL6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.3
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.05509644
+        wo_10hr: 0.05509644
+        wo_11: 0.11019288
+        wo_21: 0.0
+  TL7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.4
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.37190097
+        wo_10hr: 0.06427918
+        wo_11: 0.01377411
+        wo_21: 0.0
+  TL8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.3
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.35
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.050505070000000006
+        wo_10hr: 0.06427918
+        wo_11: 0.26629946
+        wo_21: 0.0
+  TL9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.6
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.35
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.190541855
+        wo_10hr: 0.15151521
+        wo_11: 0.305326105
+        wo_21: 0.0
+  TU1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.6
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.2
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 1800.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.06887055
+        wo_10hr: 0.041322330000000004
+        wo_11: 0.00918274
+        wo_21: 0.00918274
+  TU2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2000.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.057392125
+        wo_10hr: 0.08264466000000001
+        wo_11: 0.043618015
+        wo_21: 0.0
+  TU3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.3
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.3
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1800.0
+        sigma_21: 1600.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.011478425
+        wo_10hr: 0.006887055
+        wo_11: 0.050505070000000006
+        wo_21: 0.029843905
+  TU4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 0.5
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.12
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 2300.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.0
+        wo_10hr: 0.0
+        wo_11: 0.20661165
+        wo_21: 0.0
+  TU5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        delta: 1.0
+        h: 8000
+        mf_dead: 0.1
+        mf_live: 0.7
+        mx_dead: 0.25
+        rhop: 32
+        se: 0.01
+        sigma_100hr: 30
+        sigma_10hr: 109
+        sigma_11: 1500.0
+        sigma_21: 9999.0
+        slope: 0
+        st: 0.0555
+        wind: 0
+        wo_100hr: 0.1377411
+        wo_10hr: 0.1836548
+        wo_11: 0.1836548
+        wo_21: 0.0
