@@ -19,6 +19,7 @@ from .fuels import (
     _ROSMODEL_FUELCLASS_REGISTER,
     _ROSMODEL_NB_PROPERTIES,
     BalbiFuel,  # noqa: F401 (fuel classes are looked up by name in this module's namespace)
+    RothFuel,
 )
 from .patch import (
     DataPatch,

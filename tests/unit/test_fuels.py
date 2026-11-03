@@ -123,6 +123,82 @@ def test_BalbiFuel_minimal_dict_not_compact():
     assert mdict["properties"]["rhod"]["value"] == 400
 
 
+"""
+Roth Fuel
+"""
+
+
+@pytest.mark.parametrize(
+    "property,default_value,property_index",
+    [
+        ("mx_dead", 0.15, 1),
+        ("st", 0.0555, 2),
+        ("se", 0.01, 3),
+        ("h", 8000, 4),
+        ("rhop", 32, 5),
+        ("delta", 0.4, 6),
+        ("wo_11", 0.00459137, 7),
+        ("wo_10hr", 0.0, 8),
+        ("wo_100hr", 0.0, 9),
+        ("wo_21", 0.01377411, 10),
+        ("sigma_11", 2200, 11),
+        ("sigma_10hr", 109, 12),
+        ("sigma_100hr", 30, 13),
+        ("sigma_21", 2000, 14),
+        ("wind", 0, None),
+        ("slope", 0, None),
+        ("mf_live", 0.7, None),
+        ("mf_dead", 0.1, None),
+    ],
+)
+def test_RothFuel_init(property, default_value, property_index):
+    fuel = pl.RothFuel()
+    fuel_property = getattr(fuel, property)
+    assert type(fuel_property).__name__ == "FuelProperty"
+    assert fuel_property.name == property
+    assert fuel_property.value == default_value
+    assert fuel_property.propertyindex == property_index
+
+
+def test_RothFuel_value_change():
+    fuel = pl.RothFuel(delta=1.0)
+    assert fuel.delta.value == 1.0
+
+
+def test_RothFuel_copy():
+    fuel = pl.RothFuel()
+    fuel2 = fuel.copy(delta=1.0, wo_11=0.009)
+
+    assert fuel.delta.value == 0.4
+    assert fuel.wo_11.value == 0.00459137
+    assert fuel2.delta.value == 1.0
+    assert fuel2.wo_11.value == 0.009
+
+
+def test_RothFuel_get_property_vector():
+    fuel = pl.RothFuel(wo_11=0.009)
+    property_vector = fuel.get_property_vector(0, 15)
+
+    assert property_vector[7] == 0.009
+    assert property_vector[14] == 2000
+    assert len(property_vector) == 15
+
+
+def test_RothFuel_minimal_dict_compact():
+    mdict = pl.RothFuel().minimal_dict(compact=True)
+
+    assert mdict["class"] == "RothFuel"
+    assert mdict["properties"]["wo_11"] == 0.00459137
+
+
+def test_RothFuel_minimal_dict_not_compact():
+    mdict = pl.RothFuel().minimal_dict(compact=False)
+
+    assert mdict["class"] == "RothFuel"
+    assert mdict["properties"]["wo_11"]["value"] == 0.00459137
+    assert mdict["properties"]["wo_11"]["unit"] == "lb ft-2"
+
+
 def test_show_fuel_classes_lists_registered_classes(capsys):
     pl.show_fuel_classes(show_fuel_properties=False)
 

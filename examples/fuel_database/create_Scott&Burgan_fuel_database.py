@@ -100,7 +100,7 @@ for fuel_name, fuel in (("SB1", SB1),("SB2", SB2),("SB3", SB3),("SB4", SB4)):
 
 # save database in compact mode
 db.dump_database(
-    filename = "Scott&Burgan_fuel_models_database",
+    filename = "Scott&Burgan",
     info = "30 Fuel type models defied in Scott and Burgan [1]_ for Rothermel rate of spread model.",
     compact = True
 )

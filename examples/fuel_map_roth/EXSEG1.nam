@@ -1,0 +1,6 @@
+&NAM_LUNITn  CINIFILE = 'Init_file' /
+
+&NAM_FIREn LBLAZE = .T.,
+           NREFINX = 5,
+           NREFINY = 5,
+           CPROPAG_MODEL = 'ROTHERMEL' /
