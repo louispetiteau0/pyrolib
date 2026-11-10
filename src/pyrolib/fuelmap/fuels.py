@@ -516,10 +516,11 @@ class RothFuel(BaseFuel):
         self.sigma_10hr  = FuelProperty(name='sigma_10hr',   value=109,        unit='ft-1',     description='Surface area to volume ratio dead 10hr',   propertyindex=12)
         self.sigma_100hr = FuelProperty(name='sigma_100hr',  value=30,         unit='ft-1',     description='Surface area to volume ratio dead 100hr',  propertyindex=13)
         self.sigma_21    = FuelProperty(name='sigma_21',     value=2000,       unit='ft-1',     description='Surface area to volume ratio live herb',   propertyindex=14)
+        self.mf_live     = FuelProperty(name='mf_live',      value=0.7,        unit='-',        description='Live fuel moisture',                       propertyindex=15)
+        self.mf_dead     = FuelProperty(name='mf_dead',      value=0.05,       unit='-',        description='Dead fuel moisture',                       propertyindex=16)
         self.wind        = FuelProperty(name='wind',         value=0,          unit='ft min-1', description='Wind at mid-flame',)
         self.slope       = FuelProperty(name='slope',        value=0,          unit='-',        description='Slope steepness (tan(slope))',)
-        self.mf_live     = FuelProperty(name='mf_live',      value=0.7,        unit='-',        description='Live fuel moisture',)
-        self.mf_dead     = FuelProperty(name='mf_dead',      value=0.1,        unit='-',        description='Dead fuel moisture',)
+
        # fmt: on
         # Modify from default
         self._modify_parameter_value(**opts)
@@ -578,7 +579,7 @@ class RothFuel(BaseFuel):
 
 _ROSMODEL_NB_PROPERTIES = {
     "SANTONI2011": 22,
-    "ROTHERMEL": 15,
+    "ROTHERMEL": 17,
 }
 
 

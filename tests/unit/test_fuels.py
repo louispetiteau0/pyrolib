@@ -145,10 +145,10 @@ Roth Fuel
         ("sigma_10hr", 109, 12),
         ("sigma_100hr", 30, 13),
         ("sigma_21", 2000, 14),
+        ("mf_live", 0.7, 15),
+        ("mf_dead", 0.05, 16),
         ("wind", 0, None),
         ("slope", 0, None),
-        ("mf_live", 0.7, None),
-        ("mf_dead", 0.1, None),
     ],
 )
 def test_RothFuel_init(property, default_value, property_index):
