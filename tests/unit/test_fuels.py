@@ -131,26 +131,29 @@ Roth Fuel
 @pytest.mark.parametrize(
     "property,default_value,property_index",
     [
-        ("mx_dead", 0.15, 1),
-        ("st", 0.0555, 2),
-        ("se", 0.01, 3),
+        ("st", 0.0555, 1),
+        ("se", 0.01, 2),
+        ("rhop", 32, 3),
         ("h", 8000, 4),
-        ("rhop", 32, 5),
-        ("delta", 0.4, 6),
-        ("wo_11", 0.00459137, 7),
-        ("wo_10hr", 0.0, 8),
-        ("wo_100hr", 0.0, 9),
-        ("wo_21", 0.01377411, 10),
-        ("sigma_11", 2200, 11),
-        ("sigma_10hr", 109, 12),
-        ("sigma_100hr", 30, 13),
-        ("sigma_21", 2000, 14),
-        ("mf_live", 0.7, 15),
-        ("mf_dead", 0.05, 16),
+        ("delta", 0.4, 5),
+        ("wo_1hd", 0.00459137, 6),
+        ("wo_10hd", 0.0, 7),
+        ("wo_100hd", 0.0, 8),
+        ("wo_hl", 0.01377411, 9),
+        ("wo_wl", 0.0, 10),
+        ("sigma_1hd", 2200, 11),
+        ("sigma_10hd", 109, 12),
+        ("sigma_100hd", 30, 13),
+        ("sigma_hl", 2000, 14),
+        ("sigma_wl", 9999, 15),
+        ("mx_dead", 0.15, 16),
+        ("mf_live", 0.7, 17),
+        ("mf_dead", 0.05, 18),
         ("wind", 0, None),
         ("slope", 0, None),
     ],
 )
+
 def test_RothFuel_init(property, default_value, property_index):
     fuel = pl.RothFuel()
     fuel_property = getattr(fuel, property)
@@ -167,36 +170,36 @@ def test_RothFuel_value_change():
 
 def test_RothFuel_copy():
     fuel = pl.RothFuel()
-    fuel2 = fuel.copy(delta=1.0, wo_11=0.009)
+    fuel2 = fuel.copy(delta=1.0, wo_1hd=0.009)
 
     assert fuel.delta.value == 0.4
-    assert fuel.wo_11.value == 0.00459137
+    assert fuel.wo_1hd.value == 0.00459137
     assert fuel2.delta.value == 1.0
-    assert fuel2.wo_11.value == 0.009
+    assert fuel2.wo_1hd.value == 0.009
 
 
 def test_RothFuel_get_property_vector():
-    fuel = pl.RothFuel(wo_11=0.009)
-    property_vector = fuel.get_property_vector(0, 15)
+    fuel = pl.RothFuel(wo_1hd=0.009)
+    property_vector = fuel.get_property_vector(0, 19)
 
-    assert property_vector[7] == 0.009
+    assert property_vector[6] == 0.009
     assert property_vector[14] == 2000
-    assert len(property_vector) == 15
+    assert len(property_vector) == 19
 
 
 def test_RothFuel_minimal_dict_compact():
     mdict = pl.RothFuel().minimal_dict(compact=True)
 
     assert mdict["class"] == "RothFuel"
-    assert mdict["properties"]["wo_11"] == 0.00459137
+    assert mdict["properties"]["wo_1hd"] == 0.00459137
 
 
 def test_RothFuel_minimal_dict_not_compact():
     mdict = pl.RothFuel().minimal_dict(compact=False)
 
     assert mdict["class"] == "RothFuel"
-    assert mdict["properties"]["wo_11"]["value"] == 0.00459137
-    assert mdict["properties"]["wo_11"]["unit"] == "lb ft-2"
+    assert mdict["properties"]["wo_1hd"]["value"] == 0.00459137
+    assert mdict["properties"]["wo_1hd"]["unit"] == "lb ft-2"
 
 
 def test_show_fuel_classes_lists_registered_classes(capsys):
