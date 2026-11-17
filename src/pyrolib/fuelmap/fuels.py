@@ -469,7 +469,7 @@ class RothFuel(BaseFuel):
         Surface area to volume ratio live herb (default: 2000 ft-1)
     sigma_wl : float, optional
         Surface area to volume ratio live woody (default: 9999 ft-1) 
-    mx_dead : float, optional
+    Mxd : float, optional
         Dead fuel moisture of extinction (default: 0.15)
     Ml : float, optional
         Live fuel moisture (default: 0.7)
@@ -521,7 +521,7 @@ class RothFuel(BaseFuel):
         self.sigma_100hd = FuelProperty(name='sigma_100hd', value=30,         unit='ft-1',     description='Surface area to volume ratio dead 100hr',  propertyindex=13)
         self.sigma_hl    = FuelProperty(name='sigma_hl',    value=2000,       unit='ft-1',     description='Surface area to volume ratio live herb',   propertyindex=14)
         self.sigma_wl    = FuelProperty(name='sigma_wl',    value=9999,       unit='ft-1',     description='Surface area to volume ratio live woody',  propertyindex=15)
-        self.mx_dead     = FuelProperty(name='mx_dead',     value=0.15,       unit='-',        description='Dead fuel moisture of extinction',         propertyindex=16)
+        self.Mxd         = FuelProperty(name='Mxd',         value=0.15,       unit='-',        description='Dead fuel moisture of extinction',         propertyindex=16)
         self.Ml          = FuelProperty(name='Ml',          value=0.7,        unit='-',        description='Live fuel moisture',                       propertyindex=17)
         self.Md          = FuelProperty(name='Md',          value=0.05,       unit='-',        description='Dead fuel moisture',                       propertyindex=18)
         self.wind        = FuelProperty(name='wind',        value=0,          unit='ft min-1', description='Wind at mid-flame',)

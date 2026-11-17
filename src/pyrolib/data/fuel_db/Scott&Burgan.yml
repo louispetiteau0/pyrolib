@@ -8,9 +8,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 0.4
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -32,9 +32,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 1.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -56,9 +56,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 2.0
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -80,9 +80,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 2.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -104,9 +104,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 1.5
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -128,9 +128,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 1.5
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -152,9 +152,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 3.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -176,9 +176,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 4.0
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -200,9 +200,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 5.0
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -224,9 +224,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 0.9
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -248,9 +248,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 1.5
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -272,9 +272,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 1.8
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -296,9 +296,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 2.1
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -320,9 +320,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 1.0
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -344,9 +344,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 1.0
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -368,9 +368,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 1.2
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -392,9 +392,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 2.7
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -416,9 +416,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 1.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -440,9 +440,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 1.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -464,9 +464,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 2.4
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -488,9 +488,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 3.0
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -512,9 +512,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 6.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -536,9 +536,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 2.0
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -560,9 +560,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.15
         delta: 6.0
         h: 8000
-        mx_dead: 0.15
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -584,9 +584,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 3.0
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -608,9 +608,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.4
         delta: 4.4
         h: 8000
-        mx_dead: 0.4
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -632,9 +632,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 0.2
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -656,9 +656,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 0.2
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -680,9 +680,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.2
         delta: 0.3
         h: 8000
-        mx_dead: 0.2
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -704,9 +704,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 0.4
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -728,9 +728,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 0.6
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -752,9 +752,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 0.3
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -776,9 +776,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 0.4
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -800,9 +800,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.35
         delta: 0.3
         h: 8000
-        mx_dead: 0.35
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -824,9 +824,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.35
         delta: 0.6
         h: 8000
-        mx_dead: 0.35
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -848,9 +848,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.2
         delta: 0.6
         h: 8000
-        mx_dead: 0.2
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -872,9 +872,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 1.0
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -896,9 +896,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.3
         delta: 1.3
         h: 8000
-        mx_dead: 0.3
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -920,9 +920,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.12
         delta: 0.5
         h: 8000
-        mx_dead: 0.12
         rhop: 32
         se: 0.01
         sigma_100hd: 30
@@ -944,9 +944,9 @@ fuels:
       properties:
         Md: 0.05
         Ml: 0.7
+        Mxd: 0.25
         delta: 1.0
         h: 8000
-        mx_dead: 0.25
         rhop: 32
         se: 0.01
         sigma_100hd: 30
