@@ -436,6 +436,9 @@ class RothFuel(BaseFuel):
     Any fuel property can be passed explicitely to the constructor
     to set a different value than the default one.
 
+    Fuel class defined in metric units (SI) and converted to imperial units for ROS calculations in Blaze.
+
+    
     Other Parameters
     ----------------
 
@@ -444,31 +447,31 @@ class RothFuel(BaseFuel):
     se : float, optional
         Effective Mineral Content (default: 0.010)
     rhop : float, optional
-        Particle density (default: 32 lb ft-3)
+        Particle density (default: 512.590816 kg m-3)
     h : float, optional
-        Heat content (default: 8000 Btu lb-1)
+        Heat content (default: 18608000 J kg-1)
     delta : float, optional
-        Fuel depth (default: 0.4 ft)
+        Fuel depth (default: 0.1219 m)
     wo_1hd : float, optional
-        Dead fuel load 1hr (default: 0.00459137 lb ft-2)
+        Dead fuel load 1hr (default: 0.022417 kg m-2)
     wo_10hd : float, optional
-        Dead fuel load 10hr (default: 0 lb ft-2)
+        Dead fuel load 10hr (default: 0 kg m-2)
     wo_100hd : float, optional
-        Dead fuel load 100hr (default: 0 lb ft-2)
+        Dead fuel load 100hr (default: 0 kg m-2)
     wo_hl : float, optional
-        Live herbaceous fuel load (default: 0.01377411 lb ft-2)
+        Live herbaceous fuel load (default: 0.067251 kg m-2)
     wo_wl : float, optional
-        Live woody fuel load (default: 0.0 lb ft-2) 
+        Live woody fuel load (default: 0.0 kg m-2) 
     sigma_1hd : float, optional
-        Surface area to volume ratio dead 1hr (default: 2200 ft-1)
+        Surface area to volume ratio dead 1hr (default: 7217.85 m-1)
     sigma_10hd : float, optional
-        Surface area to volume ratio dead 10hr (default: 109 ft-1)
+        Surface area to volume ratio dead 10hr (default: 357.61 m-1)
     sigma_100hd : float, optional
-        Surface area to volume ratio dead 100hr (default: 30 ft-1)
+        Surface area to volume ratio dead 100hr (default: 98.43 m-1)
     sigma_hl : float, optional
-        Surface area to volume ratio live herb (default: 2000 ft-1)
+        Surface area to volume ratio live herb (default: 7217.85 m-1)
     sigma_wl : float, optional
-        Surface area to volume ratio live woody (default: 9999 ft-1) 
+        Surface area to volume ratio live woody (default: 9999 m-1) 
     Mxd : float, optional
         Dead fuel moisture of extinction (default: 0.15)
     Ml : float, optional
@@ -476,7 +479,7 @@ class RothFuel(BaseFuel):
     Md : float, optional
         Dead fuel moisture (default: 0.05)
     wind : float, optional
-        Wind at mid-flame (default 0 ft min-1)
+        Wind at mid-flame (default 0 m s-1)
     slope : float, optional
         Slope (default: 0 deg)    
 
@@ -506,26 +509,26 @@ class RothFuel(BaseFuel):
 
     def __init__(self, **opts):
         # fmt: off
-        self.st          = FuelProperty(name='st',          value=0.0555,     unit='-',        description='Total Mineral Content',                    propertyindex=1)
-        self.se          = FuelProperty(name='se',          value=0.01,       unit='-',        description='Effective Mineral Content',                propertyindex=2)
-        self.rhop        = FuelProperty(name='rhop',        value=32,         unit='lb ft-3',  description='Particle density',                         propertyindex=3)
-        self.h           = FuelProperty(name='h',           value=8000,       unit='Btu lb-1', description='Heat content',                             propertyindex=4)
-        self.delta       = FuelProperty(name='delta',       value=0.4,        unit='ft',       description='Fuel depth',                               propertyindex=5)
-        self.wo_1hd      = FuelProperty(name='wo_1hd',      value=0.00459137, unit='lb ft-2',  description='Dead fuel load 1hr',                       propertyindex=6)
-        self.wo_10hd     = FuelProperty(name='wo_10hd',     value=0.,         unit='lb ft-2',  description='Dead fuel load 10hr',                      propertyindex=7)
-        self.wo_100hd    = FuelProperty(name='wo_100hd',    value=0.,         unit='lb ft-2',  description='Dead fuel load 100hr',                     propertyindex=8)
-        self.wo_hl       = FuelProperty(name='wo_hl',       value=0.01377411, unit='lb ft-2',  description='Live fuel load herb',                      propertyindex=9)
-        self.wo_wl       = FuelProperty(name='wo_wl',       value=0,          unit='lb ft-2',  description='Live fuel load woody',                     propertyindex=10)        
-        self.sigma_1hd   = FuelProperty(name='sigma_1hd',   value=2200,       unit='ft-1',     description='Surface area to volume ratio dead 1hr',    propertyindex=11)
-        self.sigma_10hd  = FuelProperty(name='sigma_10hd',  value=109,        unit='ft-1',     description='Surface area to volume ratio dead 10hr',   propertyindex=12)
-        self.sigma_100hd = FuelProperty(name='sigma_100hd', value=30,         unit='ft-1',     description='Surface area to volume ratio dead 100hr',  propertyindex=13)
-        self.sigma_hl    = FuelProperty(name='sigma_hl',    value=2000,       unit='ft-1',     description='Surface area to volume ratio live herb',   propertyindex=14)
-        self.sigma_wl    = FuelProperty(name='sigma_wl',    value=9999,       unit='ft-1',     description='Surface area to volume ratio live woody',  propertyindex=15)
-        self.Mxd         = FuelProperty(name='Mxd',         value=0.15,       unit='-',        description='Dead fuel moisture of extinction',         propertyindex=16)
-        self.Ml          = FuelProperty(name='Ml',          value=0.7,        unit='-',        description='Live fuel moisture',                       propertyindex=17)
-        self.Md          = FuelProperty(name='Md',          value=0.05,       unit='-',        description='Dead fuel moisture',                       propertyindex=18)
-        self.wind        = FuelProperty(name='wind',        value=0,          unit='ft min-1', description='Wind at mid-flame',)
-        self.slope       = FuelProperty(name='slope',       value=0,          unit='-',        description='Slope steepness (tan(slope))',)
+        self.st          = FuelProperty(name='st',          value=0.0555,     unit='-',       description='Total Mineral Content',                    propertyindex=1)
+        self.se          = FuelProperty(name='se',          value=0.01,       unit='-',       description='Effective Mineral Content',                propertyindex=2)
+        self.rhop        = FuelProperty(name='rhop',        value=512.590816, unit='kg m-3',  description='Particle density',                         propertyindex=3)
+        self.h           = FuelProperty(name='h',           value=18608000,   unit='J kg-1',  description='Heat content',                             propertyindex=4)
+        self.delta       = FuelProperty(name='delta',       value=0.1219,     unit='m',       description='Fuel depth',                               propertyindex=5)
+        self.wo_1hd      = FuelProperty(name='wo_1hd',      value=0.022417,   unit='kg m-2',  description='Dead fuel load 1hr',                       propertyindex=6)
+        self.wo_10hd     = FuelProperty(name='wo_10hd',     value=0.,         unit='kg m-2',  description='Dead fuel load 10hr',                      propertyindex=7)
+        self.wo_100hd    = FuelProperty(name='wo_100hd',    value=0.,         unit='kg m-2',  description='Dead fuel load 100hr',                     propertyindex=8)
+        self.wo_hl       = FuelProperty(name='wo_hl',       value=0.067251,   unit='kg m-2',  description='Live fuel load herb',                      propertyindex=9)
+        self.wo_wl       = FuelProperty(name='wo_wl',       value=0,          unit='kg m-2',  description='Live fuel load woody',                     propertyindex=10)        
+        self.sigma_1hd   = FuelProperty(name='sigma_1hd',   value=7217.85,    unit='m-1',     description='Surface area to volume ratio dead 1hr',    propertyindex=11)
+        self.sigma_10hd  = FuelProperty(name='sigma_10hd',  value=357.61,     unit='m-1',     description='Surface area to volume ratio dead 10hr',   propertyindex=12)
+        self.sigma_100hd = FuelProperty(name='sigma_100hd', value=98.43,      unit='m-1',     description='Surface area to volume ratio dead 100hr',  propertyindex=13)
+        self.sigma_hl    = FuelProperty(name='sigma_hl',    value=7217.85,    unit='m-1',     description='Surface area to volume ratio live herb',   propertyindex=14)
+        self.sigma_wl    = FuelProperty(name='sigma_wl',    value=9999,       unit='m-1',     description='Surface area to volume ratio live woody',  propertyindex=15)
+        self.Mxd         = FuelProperty(name='Mxd',         value=0.15,       unit='-',       description='Dead fuel moisture of extinction',         propertyindex=16)
+        self.Ml          = FuelProperty(name='Ml',          value=0.7,        unit='-',       description='Live fuel moisture',                       propertyindex=17)
+        self.Md          = FuelProperty(name='Md',          value=0.05,       unit='-',       description='Dead fuel moisture',                       propertyindex=18)
+        self.wind        = FuelProperty(name='wind',        value=0,          unit='m s-1',   description='Wind at mid-flame',)
+        self.slope       = FuelProperty(name='slope',       value=0,          unit='-',       description='Slope steepness (tan(slope))',)
 
        # fmt: on
         # Modify from default
