@@ -1,0 +1,3364 @@
+infos: 30 Fuel type models defied in Scott and Burgan [1]_ for Rothermel rate of spread
+  model.
+is_compact: false
+fuels:
+  GR1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.1219
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 7217.85
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 7217.85
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.022417
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.067251
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.022417033446360004
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.6096
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 4921.259842519685
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 4265.09186351706
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.08966813378544002
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.022417033446360004
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.3362555016954
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.6096
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.056042583615900005
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.42592363548084
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.45720000000000005
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.08966813378544002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.560425836159
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.45720000000000005
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 7217.847769028871
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.022417033446360004
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.7621791371762401
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.9144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 1.2105198061034401
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 1.2192
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 4921.259842519685
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 4265.09186351706
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 1.6364434415842801
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GR9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 1.524
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 2.0175330101724
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  GS1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.27432
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5905.511811023622
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.04483406689272001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.14571071740134
+  GS2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.45720000000000005
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5905.511811023622
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.13450220067816002
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.22417033446360002
+  GS3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.54864
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.056042583615900005
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.06725110033908001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.32504698497222
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.2802129180795
+  GS4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.6400800000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.022417033446360004
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.06725110033908001
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.42592363548084
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.7621791371762401
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 1.59160937469156
+  SB1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 2.4658736790996003
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.6725110033908
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.3362555016954
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  SB2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.8966813378544001
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.9527239214703
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.0087665050862
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  SB3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.36576000000000003
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.6725110033908
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.6164684197749001
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.2329368395498002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  SB4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.8229600000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 1.1768942559339002
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 1.1768942559339002
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.1768942559339002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  SH1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.056042583615900005
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.056042583615900005
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.033625550169540004
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.29142143480268
+  SH2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.1681277508477
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.5380088027126401
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.30262995152586003
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.8630557876848601
+  SH3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.7315200000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 4593.175853018372
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.6725110033908
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.10087665050862
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 1.3898560736743202
+  SH4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.9144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.04483406689272001
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.25779588463314
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.19054478429406002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.57163435288218
+  SH5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 1.8288000000000002
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 2460.6299212598424
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.47075770237356007
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.80701320406896
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.65009396994444
+  SH6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.6096
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 2460.6299212598424
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.32504698497222
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.65009396994444
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.31383846824904
+  SH7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.15
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 1.8288000000000002
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 2460.6299212598424
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.4931747358199201
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 1.18810277265708
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.7845961706226001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.7621791371762401
+  SH8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.9144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 2460.6299212598424
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.19054478429406002
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.7621791371762401
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.45954918565038
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.97514095491666
+  SH9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.4
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 1.34112
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 2460.6299212598424
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 4921.259842519685
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.5492173194358201
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.0087665050862
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.34746401841858005
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 1.5691923412452002
+  TL1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.06096000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.80701320406896
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.4931747358199201
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.22417033446360002
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.06096000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.4931747358199201
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.51559176926628
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.31383846824904
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.2
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.09144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.62767693649808
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.4931747358199201
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.12192000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.9415154047471201
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.3362555016954
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.11208516723180001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.18288000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.9415154047471201
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.560425836159
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.25779588463314
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL6:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.09144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.26900440135632003
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.26900440135632003
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.5380088027126401
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL7:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.12192000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 1.81577970915516
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.31383846824904
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.06725110033908001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL8:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.35
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.09144000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.24658736790996005
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.31383846824904
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.30018793988888
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TL9:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.35
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.18288000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 9999
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.9303068880239401
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.73976210372988
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.4907327241829402
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0
+  TU1:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.2
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.18288000000000001
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.3362555016954
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.20175330101724
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.04483406689272001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.04483406689272001
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.20175330101724
+  TU2:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 6561.679790026246
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 5249.343832020997
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.2802129180795
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.40350660203448
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.21296181774042
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.04483406689272001
+  TU3:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.3
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.39624000000000004
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 5905.511811023622
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 5249.343832020997
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 4593.175853018372
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.056042583615900005
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.033625550169540004
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.24658736790996005
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.14571071740134
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.24658736790996005
+  TU4:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.12
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.1524
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 7545.931758530183
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 6561.679790026246
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.0
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 1.0087665050862
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.44834066892720004
+  TU5:
+    RothFuel:
+      class: RothFuel
+      properties:
+        Md:
+          Description: Dead fuel moisture
+          Unit: '-'
+          Value: 0.05
+        Ml:
+          Description: Live fuel moisture
+          Unit: '-'
+          Value: 0.7
+        Mxd:
+          Description: Dead fuel moisture of extinction
+          Unit: '-'
+          Value: 0.25
+        delta:
+          Description: Fuel depth
+          Unit: m
+          Value: 0.3048
+        h:
+          Description: Heat content
+          Unit: J kg-1
+          Value: 18608000
+        rhop:
+          Description: Particle density
+          Unit: kg m-3
+          Value: 512.590816
+        se:
+          Description: Effective Mineral Content
+          Unit: '-'
+          Value: 0.01
+        sigma_100hd:
+          Description: Surface area to volume ratio dead 100hr
+          Unit: m-1
+          Value: 98.43
+        sigma_10hd:
+          Description: Surface area to volume ratio dead 10hr
+          Unit: m-1
+          Value: 357.61
+        sigma_1hd:
+          Description: Surface area to volume ratio dead 1hr
+          Unit: m-1
+          Value: 4921.259842519685
+        sigma_hl:
+          Description: Surface area to volume ratio live herb
+          Unit: m-1
+          Value: 9999.0
+        sigma_wl:
+          Description: Surface area to volume ratio live woody
+          Unit: m-1
+          Value: 2460.6299212598424
+        slope:
+          Description: Slope steepness (tan(slope))
+          Unit: '-'
+          Value: 0
+        st:
+          Description: Total Mineral Content
+          Unit: '-'
+          Value: 0.0555
+        wind:
+          Description: Wind at mid-flame
+          Unit: m s-1
+          Value: 0
+        wo_100hd:
+          Description: Dead fuel load 100hr
+          Unit: kg m-2
+          Value: 0.6725110033908
+        wo_10hd:
+          Description: Dead fuel load 10hr
+          Unit: kg m-2
+          Value: 0.8966813378544001
+        wo_1hd:
+          Description: Dead fuel load 1hr
+          Unit: kg m-2
+          Value: 0.8966813378544001
+        wo_hl:
+          Description: Live fuel load herb
+          Unit: kg m-2
+          Value: 0.0
+        wo_wl:
+          Description: Live fuel load woody
+          Unit: kg m-2
+          Value: 0.6725110033908
